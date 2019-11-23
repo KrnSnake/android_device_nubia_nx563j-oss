@@ -93,5 +93,9 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl-bcm \
     android.hardware.nfc@1.0-service
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libgui_vendor
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/nubia/nx563j/nx563j-vendor.mk)
