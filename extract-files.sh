@@ -15,6 +15,13 @@
 # limitations under the License.
 #
 
+function blob_fixup() {
+    case "${1}" in
+    vendor/lib/libNubiaImageAlgorithm.so)
+        patchelf --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
+        ;;
+    esac
+}
 set -e
 
 export DEVICE=nx563j
