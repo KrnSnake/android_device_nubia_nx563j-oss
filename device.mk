@@ -47,7 +47,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libNubiaImageAlgorithmShim
+    libNubiaImageAlgorithmShim \
+    libshim_camera
 
 # Display
 PRODUCT_COPY_FILES += \

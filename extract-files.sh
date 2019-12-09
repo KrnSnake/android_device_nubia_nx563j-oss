@@ -17,6 +17,9 @@
 
 function blob_fixup() {
     case "${1}" in
+    vendor/lib/hw/camera.msm8998.so)
+        patchelf --add-needed "libshim_camera.so" "${2}"
+        ;;
     vendor/lib/libNubiaImageAlgorithm.so)
         patchelf --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
         ;;
