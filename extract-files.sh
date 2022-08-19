@@ -22,6 +22,11 @@ function blob_fixup() {
     vendor/lib/libmmcamera_ppeiscore.so | vendor/lib/libmmcamera_bokeh.so | vendor/lib/libnubia_effect.so | vendor/lib64/libnubia_effect.so)
         sed -i "s|libgui.so|libfui.so|g" "${2}"
         ;;
+    vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so)
+            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
+        
     esac
 }
 
