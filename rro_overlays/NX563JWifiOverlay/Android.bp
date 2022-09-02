@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "NX563JWifiOverlay",
+    theme: "NX563JWifiOverlay",
+    sdk_version: "current",
+    product_specific: true
+}
