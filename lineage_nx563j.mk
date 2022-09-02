@@ -17,25 +17,27 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from twolip device
+# Inherit from nx563j device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := twolip
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_twolip
-PRODUCT_MODEL := Redmi Note 6 Pro
+PRODUCT_BRAND := nubia
+PRODUCT_DEVICE := nx563j
+PRODUCT_MANUFACTURER := nubia
+PRODUCT_NAME := lineage_nx563j
+PRODUCT_MODEL := Nubia Z17
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-nubia
 
-TARGET_VENDOR_PRODUCT_NAME := tulip
+TARGET_VENDOR_PRODUCT_NAME := nx563j
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V10.3.2.0.PEKMIXM release-keys"
-
-BUILD_FINGERPRINT := xiaomi/tulip/tulip:9/PKQ1.180904.001/V10.3.2.0.PEKMIXM:user/release-keys
+    TARGET_DEVICE="nx563j" \
+    PRODUCT_NAME="nx563j" \
+    BUILD_FINGERPRINT="nubia/NX563J/NX563J:9/PKQ1.181021.001/eng.nubia.20190603.171651:user/release-keys" \
+    PRIVATE_BUILD_DESC="NX563J-user 9 PKQ1.181021.001 eng.nubia.20190603.171651 release-keys"
+TARGET_VENDOR := nubia
