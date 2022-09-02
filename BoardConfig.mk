@@ -52,5 +52,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
+# Tap-to-wake
+TARGET_TAP_TO_WAKE_NODE := "/data/vendor/tp/easy_wakeup_gesture"
+
 # Inherit the proprietary files
 -include vendor/nubia/nx563j/BoardConfigVendor.mk
