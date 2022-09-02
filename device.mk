@@ -24,7 +24,7 @@
 # Inherit from msm8998-common
 $(call inherit-product, device/nubia/msm8998-common/msm8998.mk)
 
-DEVICE_PATH := device/nubia/nx563j
+LOCAL_PATH := device/nubia/nx563j
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -33,8 +33,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Inherit properties.mk
-$(call inherit-product, $(DEVICE_PATH)/properties.mk)
+# Properties
+-include $(LOCAL_PATH)/properties.mk
 
 # Overlays
 PRODUCT_PACKAGES += \
