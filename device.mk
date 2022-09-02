@@ -103,5 +103,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui_vendor
 
+# Wifi
+PRODUCT_PACKAGES += \
+    NX563JWifiOverlay
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/nubia/nx563j/nx563j-vendor.mk)
