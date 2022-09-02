@@ -17,10 +17,10 @@
 
 set -e
 
-export DEVICE=twolip
-export VENDOR=xiaomi
-export DEVICE_BRINGUP_YEAR=2019
-export DEVICE_COMMON=sdm660-common
+export DEVICE=nx563j
+export VENDOR=nubia
+export DEVICE_BRINGUP_YEAR=2022
+export DEVICE_COMMON=msm8998-common
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh "$@"
 
