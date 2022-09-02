@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     libNubiaImageAlgorithmShim \
-    libshim_camera \
     libfui
 
 # Consumerir
