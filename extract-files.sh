@@ -23,6 +23,12 @@ function blob_fixup() {
     vendor/lib/libNubiaImageAlgorithm.so)
         patchelf --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
         ;;
+    vendor/lib/libarcsoft_picauto.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
+        ;;
+    vendor/lib/libmmcamera_ppeiscore.so | vendor/lib/libmmcamera_bokeh.so| vendor/lib/hw/camera.msm8998.so | vendor/lib/libnubia_effect.so | vendor/lib64/libnubia_effect.so)
+        sed -i "s|libgui.so|libfui.so|g" "${2}"
+        ;;
     esac
 }
 set -e
