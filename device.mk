@@ -32,6 +32,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -45,13 +49,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/nubia_synaptics_dsx.kl
 
-# FM
-BOARD_HAVE_QCOM_FM := true
-
-# Overlays
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-    
 # NFC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
@@ -73,19 +70,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl-bcm \
     android.hardware.nfc@1.0-service
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.device.rc
-
-# Shims
-PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/nubia/nx563j/nx563j-vendor.mk)
