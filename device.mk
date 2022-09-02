@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.nx563j
+
 # Lineage hardware
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.nx563j
