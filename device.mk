@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Lineage hardware
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.nx563j
+    vendor.mokee.touch@1.0-service.nx563j
 
 # NFC
 PRODUCT_COPY_FILES += \

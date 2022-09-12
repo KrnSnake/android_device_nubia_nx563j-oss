@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
 
 # Inherit from nx563j device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := nubia
 PRODUCT_DEVICE := nx563j
 PRODUCT_MANUFACTURER := nubia
-PRODUCT_NAME := lineage_nx563j
+PRODUCT_NAME := mokee_nx563j
 PRODUCT_MODEL := Nubia Z17
 
 PRODUCT_GMS_CLIENTID_BASE := android-nubia
