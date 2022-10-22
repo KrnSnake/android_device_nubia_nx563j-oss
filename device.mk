@@ -72,9 +72,5 @@ BOARD_HAVE_NUBIA_INPUT4 := true
 # Vibrator
 BOARD_HAVE_NUBIA_VIBRATOR := true
 
-# Wifi
-PRODUCT_PACKAGES += \
-    NX563JWifiOverlay
-
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/nubia/nx563j/nx563j-vendor.mk)
