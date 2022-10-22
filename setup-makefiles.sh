@@ -19,7 +19,7 @@ set -e
 
 export DEVICE=nx563j
 export VENDOR=nubia
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2022
 export DEVICE_COMMON=msm8998-common
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
