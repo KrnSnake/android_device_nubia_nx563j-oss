@@ -40,23 +40,14 @@ TARGET_SCREEN_DENSITY := 480
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_nx563j_defconfig
 
-# Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
-
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6442450944
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 32212254720
 BOARD_VENDORIMAGE_PARTITION_SIZE := 471859200 #471859200
 
-# Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
-
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
-
-# Tap-to-wake
-TARGET_TAP_TO_WAKE_NODE := "/data/vendor/tp/easy_wakeup_gesture"
 
 # Inherit the proprietary files
 -include vendor/nubia/nx563j/BoardConfigVendor.mk
