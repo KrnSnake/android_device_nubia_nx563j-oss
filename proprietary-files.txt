@@ -3,7 +3,13 @@ vendor/etc/camera/camera_config.xml
 vendor/etc/camera/imx318_chromatix.xml
 vendor/etc/camera/imx362_chromatix.xml
 vendor/etc/camera/s5k3p3_chromatix.xml
-vendor/lib/hw/camera.msm8998.so|
+
+# Camera HAL(- can be replaced by oss)
+vendor/lib/hw/camera.msm8998.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libqomx_core.so
+
 lib/libalParseOTP.so:vendor/lib/libalParseOTP.so
 lib/libalRnB.so:vendor/lib/libalRnB.so
 lib/libalSDE2.so:vendor/lib/libalSDE2.so
@@ -18,15 +24,10 @@ lib/libarcsoft_night_shot.so:vendor/lib/libarcsoft_night_shot.so
 lib/libarcsoft_low_light_shot.so:vendor/lib/libarcsoft_low_light_shot.so
 lib/libarcsoft_picauto.so:vendor/lib/libarcsoft_picauto.so
 lib/libmmcamera_nubiacustpro.so:vendor/lib/libmmcamera_nubiacustpro.so
-vendor/lib/libmmjpeg_interface.so
-#vendor/lib/libmm-omxcore.so
-#vendor/lib64/libmm-omxcore.so
-vendor/lib/libmm-qcamera.so
-lib64/libmorpho_panorama_gp.so:vendor/lib64/libmorpho_panorama_gp.so
 lib/libmpbase.so:vendor/lib/libmpbase.so
 lib/libnubia_effect.so:vendor/lib/libnubia_effect.so
 lib/libNubiaImageAlgorithm.so:vendor/lib/libNubiaImageAlgorithm.so
-vendor/lib/libqomx_core.so
+
 lib64/libAlgorithm.so:vendor/lib64/libAlgorithm.so
 lib64/libalParseOTP.so:vendor/lib64/libalParseOTP.so
 lib64/libalRnB.so:vendor/lib64/libalRnB.so
@@ -47,6 +48,7 @@ lib64/libDualCamera_Calibration.so:vendor/lib64/libDualCamera_Calibration.so
 lib64/libdngcreator.so:vendor/lib64/libdngcreator.so
 lib64/libhistutil.so:vendor/lib64/libhistutil.so
 lib64/libIndependenceUtil.so:vendor/lib64/libIndependenceUtil.so
+lib64/libmorpho_panorama_gp.so:vendor/lib64/libmorpho_panorama_gp.so
 lib64/libmpbase.so:vendor/lib64/libmpbase.so
 lib64/libmulti_exposure.so:vendor/lib64/libmulti_exposure.so
 lib64/libnubia_clone.so:vendor/lib64/libnubia_clone.so
@@ -75,11 +77,11 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libSonyIMX318PdafLibrary.so
-vendor/lib64/libcdsprpc.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libhal_dbg.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libHAFIAFalSDE1.so
+vendor/lib64/libcdsprpc.so
 
 # Camera actuators
 vendor/lib/libactuator_ak7371_aux.so
