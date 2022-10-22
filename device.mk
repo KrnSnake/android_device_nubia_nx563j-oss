@@ -51,6 +51,27 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/display/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
 
+# Fingerprint
+BOARD_HAVE_NUBIA_FPC_FINGERPRINT := true
+
+# Init
+BOARD_WITH_ROOT_SYSTEM := true
+
+# IR
+BOARD_HAVE_NUBIA_IR := true
+
+# Light
+BOARD_HAVE_NUBIA_HOME_LED := true
+
+# NFC
+BOARD_HAVE_NUBIA_NFC := true
+
+# Touch
+BOARD_HAVE_NUBIA_INPUT4 := true
+
+# Vibrator
+BOARD_HAVE_NUBIA_VIBRATOR := true
+
 # Wifi
 PRODUCT_PACKAGES += \
     NX563JWifiOverlay
