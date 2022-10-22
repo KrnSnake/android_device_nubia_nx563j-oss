@@ -47,11 +47,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    libNubiaImageAlgorithmShim \
-    libfui
-
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
