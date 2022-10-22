@@ -359,8 +359,8 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 # Fingerprint sensor
 vendor/lib64/libteeclientjni.so
 lib64/com.fingerprints.extension@1.0.so:vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc|fb1fa6db8c56ed18453255a733a9322e16bc8abd
+vendor/bin/hw/android.hardware.biometrics.fingerprint.fpc@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.nubia_msm8998
+vendor/etc/init/android.hardware.biometrics.fingerprint.fpc@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.nubia_msm8998.rc
 
 # Fingerprint IFAA
 vendor/lib/vendor.nubia.ifaa@1.0-impl.so
