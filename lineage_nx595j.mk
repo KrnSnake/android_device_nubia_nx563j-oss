@@ -22,22 +22,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from nx563j device
+# Inherit from nx595j device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := nubia
-PRODUCT_DEVICE := nx563j
+PRODUCT_DEVICE := nx595j
 PRODUCT_MANUFACTURER := nubia
-PRODUCT_NAME := lineage_nx563j
-PRODUCT_MODEL := Nubia Z17
+PRODUCT_NAME := lineage_nx595j
+PRODUCT_MODEL := Nubia Z17S
 
 PRODUCT_GMS_CLIENTID_BASE := android-nubia
 
-TARGET_VENDOR_PRODUCT_NAME := nx563j
+TARGET_VENDOR_PRODUCT_NAME := nx595j
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="nx563j" \
-    PRODUCT_NAME="nx563j" \
-    BUILD_FINGERPRINT="nubia/NX563J/NX563J:9/PKQ1.181021.001/eng.nubia.20190603.171651:user/release-keys" \
-    PRIVATE_BUILD_DESC="NX563J-user 9 PKQ1.181021.001 eng.nubia.20190603.171651 release-keys"
+    TARGET_DEVICE="nx595j" \
+    PRODUCT_NAME="nx595j" \
+    BUILD_FINGERPRINT="nubia/NX595J/NX595J:9/PKQ1.181021.001/eng.nubia.20190603.171651:user/release-keys" \
+    PRIVATE_BUILD_DESC="NX595J-user 9 PKQ1.181021.001 eng.nubia.20190603.171651 release-keys"
 TARGET_VENDOR := nubia
