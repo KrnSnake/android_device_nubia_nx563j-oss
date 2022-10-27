@@ -24,7 +24,7 @@
 # Inherit from msm8998-common
 $(call inherit-product, device/nubia/msm8998-common/msm8998.mk)
 
-LOCAL_PATH := device/nubia/nx563j
+LOCAL_PATH := device/nubia/nx595j
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -84,11 +84,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.nx563j
+    android.hardware.light@2.0-service.nx595j
 
 # Lineage hardware
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.nx563j
+    vendor.lineage.touch@1.0-service.nx595j
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    NX563JWifiOverlay
+    NX595JWifiOverlay
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/nubia/nx563j/nx563j-vendor.mk)
+$(call inherit-product-if-exists, vendor/nubia/nx595j/nx595j-vendor.mk)
