@@ -25,10 +25,10 @@
 # Inherit from msm8998-common
 -include device/nubia/msm8998-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/nubia/nx563j
+DEVICE_PATH := device/nubia/nx595j
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := nx563j,NX563J
+TARGET_OTA_ASSERT_DEVICE := nx595j,NX595J
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
@@ -38,7 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 480
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_nx563j_defconfig
+TARGET_KERNEL_CONFIG := lineageos_nx595j_defconfig
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
@@ -59,4 +59,4 @@ VENDOR_SECURITY_PATCH := 2018-11-01
 TARGET_TAP_TO_WAKE_NODE := "/data/vendor/tp/easy_wakeup_gesture"
 
 # Inherit the proprietary files
--include vendor/nubia/nx563j/BoardConfigVendor.mk
+-include vendor/nubia/nx595j/BoardConfigVendor.mk
