@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=nx563j
+export DEVICE=nx595j
 export DEVICE_COMMON=msm8998-common
 export VENDOR=nubia
 
